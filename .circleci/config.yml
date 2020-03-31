@@ -4,13 +4,12 @@
 
 version: 2.1
 orbs:
-  portshiftscanner: 'moriya/scanner-orb@0.0.2'
+  portshiftscanner: 'moriya/scanner-orb@0.0.3'
 jobs:
   docker-build:
     machine: true
     steps:
       - checkout
-      - setup_remote_docker
       - run: mkdir -p workspace
       - run: 'docker pull mongo:latest'
       - run: 'docker save -o workspace/mongo.tar mongo:latest'
