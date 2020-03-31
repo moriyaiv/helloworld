@@ -10,6 +10,7 @@ jobs:
     machine: true
     steps:
       - checkout
+      - setup_remote_docker
       - run: mkdir -p workspace
       - run: 'docker pull mongo:latest'
       - run: 'docker save -o workspace/mongo.tar mongo:latest'
