@@ -4,7 +4,7 @@
 
 version: 2.1
 orbs:
-  portshiftscanner: 'moriya/scanner-orb@0.0.20'
+  portshiftscanner: 'moriya/scanner-orb@0.0.21'
 jobs:
   docker-build:
     machine: true
