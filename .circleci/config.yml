@@ -25,7 +25,7 @@ workflows:
           requires:
             - docker-build
           context: blabla
-          image_name: 'registry.gitlab.com/portshift/portshift'
-          image_tag: 'man-3093-add-disabled-mode-to-portshift-connection-rule-132968841'
+          image_name: 'registry.gitlab.com/portshift/portshift/vault'
+          image_tag: '0.10.1'
           portshift_server: 'moriyaiv.demo.portshift.co' 
 
