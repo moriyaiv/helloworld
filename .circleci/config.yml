@@ -27,4 +27,5 @@ workflows:
           context: blabla
           image_name: 'mongo'
           image_tag: 'latest'
-          portshift_server: 'moriyaiv.demo.portshift.co'
+          portshift_server: 'moriyaiv.demo.portshift.co' 
+          
