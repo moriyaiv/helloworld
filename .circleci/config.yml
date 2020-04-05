@@ -4,7 +4,7 @@
 
 version: 2.1
 orbs:
-  portshiftscanner: 'moriya/scanner-orb@0.0.18'
+  portshiftscanner: 'moriya/scanner-orb@0.0.19'
 jobs:
   docker-build:
     machine: true
@@ -14,7 +14,7 @@ jobs:
       - run: 'docker pull mongo:latest'
       - run: 'docker save -o workspace/mongo.tar mongo:latest'
       - persist_to_workspace:
-          root: workspace
+          root: workspaceS
           paths:
             - mongo.tar
 workflows:
