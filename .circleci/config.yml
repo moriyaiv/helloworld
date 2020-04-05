@@ -4,7 +4,7 @@
 
 version: 2.1
 orbs:
-  portshiftscanner: 'moriya/scanner-orb@0.0.10'
+  portshiftscanner: 'moriya/scanner-orb@0.0.11'
 jobs:
   docker-build:
     machine: true
@@ -28,4 +28,3 @@ workflows:
           image_name: 'mongo'
           image_tag: 'latest'
           portshift_server: 'moriyaiv.demo.portshift.co'
-          image_path: mongo.tar
