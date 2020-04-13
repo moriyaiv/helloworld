@@ -23,7 +23,7 @@ workflows:
       # - docker-build
       - portshiftscanner/scan-image:
           requires:
-            - docker-build
+            # - docker-build
           context: blabla
           image_name: 'registry.gitlab.com/portshift/portshift/vault'
           image_tag: '0.10.1'
