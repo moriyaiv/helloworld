@@ -12,6 +12,7 @@ jobs:
       - checkout
       - run: mkdir -p workspace
       - run: 'docker pull mongo:latest'
+      - run: 'docker save -o workspace/mongo.tar mongo:latest'
       - persist_to_workspace:
           root: workspace
           paths:
