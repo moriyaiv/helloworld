@@ -27,6 +27,6 @@ workflows:
           context: blabla
           image_name: 'registry.gitlab.com/portshift/portshift/vault'
           image_tag: '0.10.1'
-          highest_severity_allowed: 'MEDIUM'
+          highest_severity_allowed: 'LOW'
           portshift_server: 'moriyaiv.demo.portshift.co' 
 
