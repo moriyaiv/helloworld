@@ -25,6 +25,5 @@ workflows:
           requires:
             - docker-build
           context: blabla
-          image_name: 'registry.gitlab.com/portshift/portshift/vault'
-          image_tag: '0.10.1'
-          highest_severity_allowed: 'LOW'
+          image_name: 'mongo'
+          image_tag: 'latest'
