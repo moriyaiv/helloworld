@@ -25,6 +25,5 @@ workflows:
           requires:
             - docker-build
           context: blabla
-          image_name: 'node'
-          image_tag: 'latest'
+          image_name: 'node:latest'
           portshift_server: 'moriyaiv.demo.portshift.co'
